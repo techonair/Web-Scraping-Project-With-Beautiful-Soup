@@ -10,7 +10,7 @@ def extract(page):
 
 def transform(soup):
     divs = soup.find_all('div', class_ = 'job-card-container--clickable')
-    for 
+    
     
 
 c = extract(0)
