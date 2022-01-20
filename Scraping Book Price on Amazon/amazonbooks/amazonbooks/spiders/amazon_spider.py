@@ -3,7 +3,7 @@ from ..items import AmazonbooksItem
 
 class AmazonSpiderSpider(scrapy.Spider):
     name = 'amazon_spider'
-    start_urls = ['https://www.amazon.in/s?i=stripbooks&bbn=976390031&rh=n%3A976389031%2Cn%3A1318105031%2Cp_n_publication_date%3A2684819031%2Cp_n_feature_three_browse-bin%3A9141482031%2Cp_72%3A1318476031&dc&qid=1641237557&rnid=976390031&ref=sr_nr_n_7']
+    start_urls = ["https://www.amazon.in/s?i=stripbooks&bbn=976390031&rh=n%3A976389031%2Cn%3A1318105031%2Cp_n_publication_date%3A2684819031%2Cp_n_feature_three_browse-bin%3A9141482031%2Cp_72%3A1318476031&dc&qid=1641237557&rnid=976390031&ref=sr_nr_n_7"]
 
     def parse(self, response):
         items = AmazonbooksItem()

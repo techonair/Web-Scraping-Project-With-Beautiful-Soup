@@ -6,11 +6,13 @@
 import scrapy
 
 
-class AmazonbooksItem(scrapy.Item):
+class Top250ShowsItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    book_name = scrapy.Field()
-    book_author = scrapy.Field()
-    book_price = scrapy.Field()
-    book_imagelink = scrapy.Field()
+
+    show_name = scrapy.Field()
+    release_date = scrapy.Field()
+    imdb_rating = scrapy.Field()
+    image_link = scrapy.Field()
+    
     pass
